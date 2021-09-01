@@ -6,21 +6,11 @@ import random
 import pygame
 from pygame.locals import *
 
-
 print(os.getcwd())
 print('hi')
 
 
-
-
-
-
-
-
 pygame.init()
-
-
-
 
 black = pygame.Color(0, 0, 0)         # Black
 white = pygame.Color(255, 255, 255)   # White
@@ -28,26 +18,16 @@ grey = pygame.Color(128, 128, 128)   # Grey
 red = pygame.Color(255, 0, 0)       # Red
 
 
-
-
-
 FPS = pygame.time.Clock()
 FPS.tick(60) # this goes inside the loop and it stalls in real time, it is not a parameter
 fps = 60
 
 
-
-
-
 k = 80
-
-
-
 
 surf1 = pygame.display.set_mode((10*k, 10*k))
 surf1.fill(black)
 pygame.display.set_caption("Example")
-
 
 
 class Chessboard(pygame.Surface):
@@ -59,19 +39,6 @@ class Chessboard(pygame.Surface):
             for j in range(k*8):
                     x = ((j // k % 2) + (i // k % 2)) % 2
                     self.set_at( (i, j), c[x] )
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -87,31 +54,12 @@ while True:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 SCREEN_WIDTH = 400
 SCREEN_HEIGHT = 600
 SPEED = 5
 
 
-
 P1 = Player()
-
 
 
 sys.exit()
@@ -134,20 +82,6 @@ while True:
 
     pygame.display.update()
     FPS.tick(fps)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -5,11 +5,7 @@ import pygame
 from pygame.locals import *
 import c
 
-
-
-
 class Chessboard(pygame.Surface):
-
 
 
     def __init__(self, size = (c.k*8, c.k*8)):
@@ -21,3 +17,7 @@ class Chessboard(pygame.Surface):
                     self.set_at( (i, j), g[x] )
 
 
+
+def main():
+	print("hello main")
+	

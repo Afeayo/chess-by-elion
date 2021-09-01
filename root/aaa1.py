@@ -33,14 +33,8 @@ pygame.display.set_caption("Example")
 
 
 
-
-
-
-
-
 c1 = Chessboard()
 surf1.blit(c1, (k,k))
-
 
 
 p1 = Piece()
@@ -152,18 +146,6 @@ while True:
 
     pygame.display.update()
     FPS.tick(fps)
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
